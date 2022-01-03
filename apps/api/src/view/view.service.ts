@@ -1,17 +1,19 @@
 import { Injectable, OnModuleInit } from '@nestjs/common';
 import next from 'next';
-import { NextServer } from 'next/dist/server/next';
+import { NextServer, NextServerOptions } from 'next/dist/server/next';
 
 @Injectable()
 export class ViewService implements OnModuleInit {
   private server!: NextServer;
 
   async onModuleInit(): Promise<void> {
+    const nextOptions: NextServerOptions = {
+      dev: false,
+      dir: 'dist/apps/blog',
+    };
+
     try {
-      this.server = next({
-        isNextDevCommand: true,
-        dir: 'dist/apps/blog',
-      });
+      this.server = next(nextOptions);
       this.server.prepare();
     } catch (error) {
       console.log('NEXT SERVER:', error);
