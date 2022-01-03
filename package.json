@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
+    "build": "nx run-many --target=build --all=true --parallel=true",
+    "start:prod": "node dist/apps/api/main",
     "test": "nx test"
   },
   "private": true,
