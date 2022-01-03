@@ -10,16 +10,11 @@
  * node server.js
  */
 
-/**
- * @typedef {import(next/dist/server/next-server).default} Server
- */
-
-const NextServer = require(next / dist / server / next - server).default;
+const NextServer = require('next/dist/server/next-server').default;
 const express = require('express');
 
 const nextApp = new NextServer({
   dir: './dist/apps/<%= name %>',
-  staticMarkup: false,
   quiet: false,
   conf: {
     distDir: '.',
