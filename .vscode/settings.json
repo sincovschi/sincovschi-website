@@ -1,7 +1,5 @@
 {
-    "conventionalCommits.scopes": [
-        "api",
-        "blog",
-        "workspace"
-    ]
+  "conventionalCommits.scopes": ["api", "blog", "workspace"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
 }
