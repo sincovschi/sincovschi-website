@@ -1,42 +1,22 @@
 import { Module } from '@nestjs/common';
-import { SequelizeModule, SequelizeModuleOptions } from '@nestjs/sequelize';
+import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
 
 @Module({
-  imports: [SequelizeModule.forRoot(getSequelizeModuleOptions())],
+  imports: [TypeOrmModule.forRoot(getTypeOrmModuleOptions())],
 })
 export class PostgresModule {}
 
-function getSequelizeModuleOptions(): SequelizeModuleOptions {
-  const options: SequelizeModuleOptions = {
+function getTypeOrmModuleOptions(): TypeOrmModuleOptions {
+  const isDev = process.env.NODE_ENV === 'development';
+
+  const options: TypeOrmModuleOptions & { ssl: any } = {
+    type: isDev ? 'sqlite' : 'postgres',
+    database: isDev ? './apps/api/src/postgres/db.sqlite' : '',
+    url: isDev ? '' : process.env.DATABASE_URL,
+    ssl: { rejectUnauthorized: false },
     synchronize: true,
-    autoLoadModels: true,
-    models: [],
+    autoLoadEntities: true,
   };
-
-  if (process.env.NODE_ENV === 'development') {
-    options.dialect = 'sqlite';
-    options.storage = './apps/api/src/postgres/db.sqlite';
-    return options;
-  }
-
-  const match = new RegExp(
-    '^' +
-      'postgres://(?<username>.+?)' +
-      ':(?<password>.+?)' +
-      '@(?<host>.+?)' +
-      ':(?<port>.+?)' +
-      '/(?<database>.+?)' +
-      '$'
-  ).exec(process.env.DATABASE_URL);
-
-  if (match !== null) {
-    options.dialect = 'postgres';
-    options.username = match.groups.username;
-    options.password = match.groups.password;
-    options.host = match.groups.host;
-    options.port = Number(match.groups.port);
-    options.database = match.groups.database;
-  }
 
   return options;
 }

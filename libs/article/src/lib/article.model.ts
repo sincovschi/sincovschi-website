@@ -1,29 +1,36 @@
-import { Column, Model, Table, DataType } from 'sequelize-typescript';
-import {} from '@nestjs/sequelize';
+import {
+  Entity,
+  Column,
+  BaseEntity,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
-@Table
-export class Article extends Model {
+@Entity()
+export class Article extends BaseEntity {
   @Column({
-    type: DataType.UUID,
-    defaultValue: DataType.UUIDV4,
-  })
-  id!: string;
-
-  @Column({
-    type: DataType.STRING,
-    primaryKey: true,
+    type: 'text',
+    unique: true,
+    primary: true,
+    nullable: false,
   })
   slug!: string;
 
   @Column({
-    type: DataType.NUMBER,
-    defaultValue: 0,
+    type: 'integer',
+    default: 0,
   })
-  views!: boolean;
+  views!: number;
 
   @Column({
-    type: DataType.NUMBER,
-    defaultValue: 0,
+    type: 'integer',
+    default: 0,
   })
-  likes!: boolean;
+  likes!: number;
+
+  @CreateDateColumn()
+  public createdAt!: Date;
+
+  @UpdateDateColumn()
+  public updatedAt!: Date;
 }

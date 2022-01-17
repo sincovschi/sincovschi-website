@@ -1,38 +1,32 @@
 import { Injectable } from '@nestjs/common';
-import { InjectModel } from '@nestjs/sequelize';
 import { Article } from './article.model';
 
 @Injectable()
 export class ArticleService {
-  constructor(
-    @InjectModel(Article)
-    private model: typeof Article
-  ) {}
+  constructor() {}
 
   async findAll(): Promise<Article[]> {
-    return this.model.findAll();
+    return Article.find();
   }
 
-  findOne(id: string): Promise<Article | null> {
-    return this.model.findOne({
-      where: {
-        id,
-      },
+  findOne(slug: string): Promise<Article | undefined> {
+    return Article.findOne({
+      slug,
     });
   }
 
-  createOne(): Promise<Article | null> {
-    return this.model.create({
+  createOne(): Promise<Article> {
+    return Article.create({
       slug: String(Math.random()),
-    });
+    }).save();
   }
 
-  async remove(id: string): Promise<void> {
-    const article = await this.findOne(id);
-    await article?.destroy();
+  async remove(slug: string): Promise<void> {
+    const article = await this.findOne(slug);
+    await article?.remove();
   }
 
-  async removeAll(): Promise<void> {
-    return (await this.findAll()).forEach((a) => a.destroy());
+  async removeAll(): Promise<Article[]> {
+    return Article.remove(await this.findAll());
   }
 }
