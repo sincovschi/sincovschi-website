@@ -1,7 +1,7 @@
 import { getAllArticles } from '@sincovschi-website/article/article.markdown';
 import { Article } from '@sincovschi-website/article/article.model';
 
-export default function ({ articles }: { articles: Article[] }) {
+export default function Blog({ articles }: { articles: Article[] }) {
   return (
     <ul>
       {articles.map((a) => {

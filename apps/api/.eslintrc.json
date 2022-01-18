@@ -14,5 +14,8 @@
       "files": ["*.js", "*.jsx"],
       "rules": {}
     }
-  ]
+  ],
+  "env": {
+    "es6": true
+  }
 }

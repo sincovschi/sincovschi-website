@@ -3,8 +3,6 @@ import { ArticleEntity } from './article.entity';
 
 @Injectable()
 export class ArticleService {
-  constructor() {}
-
   async findAll(): Promise<ArticleEntity[]> {
     return ArticleEntity.find();
   }

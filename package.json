@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "nx": "nx",
     "start": "nx serve",
     "build": "nx run-many --target=build --all=true --parallel=true",
     "heroku-postbuild": "npm run build -- --prod",

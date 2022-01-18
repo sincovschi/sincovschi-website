@@ -2,6 +2,7 @@ import { ARTICLES_DIR } from '@sincovschi-website/article/article.const';
 import { getArticleContent } from '@sincovschi-website/article/article.markdown';
 import { Article } from '@sincovschi-website/article/article.model';
 import fs from 'fs';
+import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 
 export default function ArticleComponent({ article }: { article: Article }) {
@@ -19,17 +20,18 @@ export default function ArticleComponent({ article }: { article: Article }) {
  * Next.js will pre-render this page at build time
  * using the props returned by getStaticProps.
  */
-export async function getStaticProps({ params }: { params: any }) {
-  const article = await getArticleContent(params.slug + '.md');
-
+export const getStaticProps: GetStaticProps<{ article: Article }> = async ({
+  params: { slug },
+}) => {
+  const article = getArticleContent(slug + '.md');
   return { props: { article } };
-}
+};
 /**
  * If a page has dynamic routes (documentation)
  * and uses getStaticProps it needs to define a list of paths
  * that have to be rendered to HTML at build time.
  */
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = () => {
   const articlesFileNames = fs.readdirSync(ARTICLES_DIR);
 
   return {
@@ -42,4 +44,4 @@ export async function getStaticPaths() {
     }),
     fallback: false,
   };
-}
+};
