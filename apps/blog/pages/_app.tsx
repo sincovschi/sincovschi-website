@@ -1,18 +1,20 @@
 import { AppProps } from 'next/app';
+import { Footer, Header } from '@sincovschi-website/layout';
 import Head from 'next/head';
 import './styles.css';
 
-function CustomApp({ Component, pageProps }: AppProps) {
+export default function Website({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Welcome to blog!</title>
+        <title>Sincovschi's website</title>
       </Head>
-      <main className="app">
+
+      <Header />
+      <main>
         <Component {...pageProps} />
       </main>
+      <Footer />
     </>
   );
 }
-
-export default CustomApp;

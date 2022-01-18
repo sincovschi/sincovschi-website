@@ -3,6 +3,7 @@
   "projects": {
     "api": "apps/api",
     "article": "libs/article",
-    "blog": "apps/blog"
+    "blog": "apps/blog",
+    "layout": "libs/layout"
   }
 }
