@@ -1,5 +1,4 @@
-import { getAllArticles } from '@sincovschi-website/article/article.markdown';
-import { Article } from '@sincovschi-website/article/article.model';
+import { Article, getAllArticles } from '@sincovschi-website/article';
 
 export default function Blog({ articles }: { articles: Article[] }) {
   return (

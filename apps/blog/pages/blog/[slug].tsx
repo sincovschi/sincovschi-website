@@ -1,6 +1,8 @@
-import { ARTICLES_DIR } from '@sincovschi-website/article/article.const';
-import { getArticleContent } from '@sincovschi-website/article/article.markdown';
-import { Article } from '@sincovschi-website/article/article.model';
+import {
+  Article,
+  ARTICLES_DIR,
+  getArticleContent,
+} from '@sincovschi-website/article';
 import fs from 'fs';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';

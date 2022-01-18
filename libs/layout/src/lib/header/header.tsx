@@ -14,11 +14,7 @@ export function Header(props: HeaderProps) {
       `}</style>
       <div id="logo">Logo</div>
       <ul>
-        <li>Links</li>
-        <li>Links</li>
-        <li>Links</li>
-        <li>Links</li>
-        <li>Links</li>
+        <li>Link</li>
       </ul>
     </header>
   );
