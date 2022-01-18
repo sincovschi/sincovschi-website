@@ -1,5 +1,5 @@
 import { Controller, Get, Param } from '@nestjs/common';
-import { ArticleService } from '@sincovschi-website/article';
+import { ArticleService } from '@sincovschi-website/article/article.service';
 
 import { AppService } from './app.service';
 

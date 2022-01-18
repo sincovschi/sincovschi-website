@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sincovschi-website/article": ["libs/article/src/index.ts"]
+      "@sincovschi-website/article/*": ["libs/article/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,22 +1,22 @@
 import { Injectable } from '@nestjs/common';
-import { Article } from './article.model';
+import { ArticleEntity } from './article.entity';
 
 @Injectable()
 export class ArticleService {
   constructor() {}
 
-  async findAll(): Promise<Article[]> {
-    return Article.find();
+  async findAll(): Promise<ArticleEntity[]> {
+    return ArticleEntity.find();
   }
 
-  findOne(slug: string): Promise<Article | undefined> {
-    return Article.findOne({
+  findOne(slug: string): Promise<ArticleEntity | undefined> {
+    return ArticleEntity.findOne({
       slug,
     });
   }
 
-  createOne(): Promise<Article> {
-    return Article.create({
+  createOne(): Promise<ArticleEntity> {
+    return ArticleEntity.create({
       slug: String(Math.random()),
     }).save();
   }
@@ -26,7 +26,7 @@ export class ArticleService {
     await article?.remove();
   }
 
-  async removeAll(): Promise<Article[]> {
-    return Article.remove(await this.findAll());
+  async removeAll(): Promise<ArticleEntity[]> {
+    return ArticleEntity.remove(await this.findAll());
   }
 }
