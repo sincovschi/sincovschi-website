@@ -1,3 +1,6 @@
+import { Logo } from './logo/logo';
+import { Nav } from './nav/nav';
+
 /* eslint-disable-next-line */
 export interface HeaderProps {}
 
@@ -6,18 +9,11 @@ export function Header(props: HeaderProps) {
     <header>
       <style jsx>{`
         header {
-          color: pink;
-        }
-        #logo {
-          font-size: 100px;
+          background: lightblue;
         }
       `}</style>
-      <div id="logo">Logo</div>
-      <ul>
-        <li>Link</li>
-      </ul>
+      <Logo />
+      <Nav />
     </header>
   );
 }
-
-export default Header;

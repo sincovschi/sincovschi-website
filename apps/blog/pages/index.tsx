@@ -9,7 +9,8 @@ export default function Index() {
       <h1>
         <style jsx>{`
           h1 {
-            color: coral;
+            background-color: coral;
+            height: 200vh;
           }
         `}</style>
         <span> Hello there, </span>

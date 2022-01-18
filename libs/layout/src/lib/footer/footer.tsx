@@ -9,7 +9,7 @@ export function Footer(props: FooterProps) {
           background: lightblue;
         }
       `}</style>
-      <h1>Created by ©Eugeniu Sincovschi.</h1>
+      <p>Created by ©Eugeniu Sincovschi.</p>
     </footer>
   );
 }
