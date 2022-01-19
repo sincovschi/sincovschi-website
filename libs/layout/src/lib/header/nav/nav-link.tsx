@@ -23,7 +23,7 @@ export function NavLink({
       <style jsx>{`
         a {
           padding: 0.2em 0.5em;
-          ${isActive && 'color: var(--main-accent__active)'}
+          ${isActive ? 'color: var(--main-accent__active)' : ''}
         }
       `}</style>
       {children}

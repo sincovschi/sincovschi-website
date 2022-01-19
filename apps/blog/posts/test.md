@@ -1,5 +1,7 @@
 ---
-title: Hello world
+title: Test markdown
+shortDescription: ThiLorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultrices sem nec lacus bibendum, tristique viverra ipsum congue. Phasellus turpis nibh, tincidunt tempus ullamcorper ut, posuere quis nisl.
+coverPath: /images/apple-pi-1.jpg
 ---
 
 # Sincovschi website

@@ -10,9 +10,16 @@ export function Header(props: HeaderProps) {
       <style jsx>{`
         header {
         }
+        span {
+          text-align: center;
+          width: 3.5rem;
+        }
       `}</style>
       <Logo />
       <Nav />
+      <span>
+        <button>Search</button>
+      </span>
     </header>
   );
 }

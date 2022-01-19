@@ -13,7 +13,7 @@ export function Logo() {
           object-fit: contain;
         }
       `}</style>
-      <img src="/images/apple-pi-1.jpg" alt="Logo" />
+      <img src="/images/logo.svg" alt="Logo" />
     </div>
   );
 }

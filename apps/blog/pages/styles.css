@@ -42,19 +42,19 @@ body * {
 }
 
 header {
-  grid-area: 1 / 2 / 1 / 2;
+  grid-area: 1 / 2 / span 1 / span 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 main {
-  grid-area: 2 / 2 / 2 / 2;
+  grid-area: 2 / 2 / span 1 / span 1;
   overflow-y: auto;
 }
 
 footer {
-  grid-area: 3 / 2 / 3 / 2;
+  grid-area: 3 / 2 / span 1 / span 1;
   text-align: center;
 }
 
