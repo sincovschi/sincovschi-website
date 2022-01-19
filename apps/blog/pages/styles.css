@@ -3,8 +3,18 @@
   --font-color: hsl(0, 0%, 15%);
   --bg-color: hsl(0, 0%, 100%);
   --bg-accent: hsl(0, 0%, 90%);
-  --main-accent: hsl(240, 40%, 70%);
-  --main-accent__active: hsl(240, 40%, 60%);
+  --main-accent: hsl(240, 40%, 30%);
+  --main-accent__active: hsl(240, 40%, 40%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-color: hsl(0, 0%, 100%);
+    --bg-color: hsl(0, 0%, 15%);
+    --bg-accent: hsl(0, 0%, 25%);
+    --main-accent: hsl(240, 40%, 70%);
+    --main-accent__active: hsl(240, 40%, 60%);
+  }
 }
 
 :root {
