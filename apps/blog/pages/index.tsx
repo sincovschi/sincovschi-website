@@ -7,13 +7,7 @@ export default function Index() {
         <title>Wellcome to sincovchi website.</title>
       </Head>
       <h1>
-        <style jsx>{`
-          h1 {
-            background-color: coral;
-            height: 200vh;
-          }
-        `}</style>
-        <span> Hello there, </span>
+        <style jsx>{``}</style>
         Welcome to Sincovschi&apos;s blog 👋
       </h1>
     </>

@@ -9,7 +9,6 @@ export function Header(props: HeaderProps) {
     <header>
       <style jsx>{`
         header {
-          background: lightblue;
         }
       `}</style>
       <Logo />

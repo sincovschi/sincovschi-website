@@ -6,7 +6,6 @@ export function Footer(props: FooterProps) {
     <footer>
       <style jsx>{`
         footer {
-          background: lightblue;
         }
       `}</style>
       <p>Created by ©Eugeniu Sincovschi.</p>

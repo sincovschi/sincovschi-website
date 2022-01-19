@@ -13,10 +13,6 @@ export function NavLink({
 
   const isActive = router.asPath === href;
 
-  if (isActive) {
-    return <span>{children}</span>;
-  }
-
   const handleClick = (e: MouseEvent) => {
     e.preventDefault();
     router.push(href);
@@ -26,7 +22,8 @@ export function NavLink({
     <a href={href} onClick={handleClick}>
       <style jsx>{`
         a {
-          padding: 0.1rem 0.5rem;
+          padding: 0.2em 0.5em;
+          ${isActive && 'color: var(--main-accent__active)'}
         }
       `}</style>
       {children}
