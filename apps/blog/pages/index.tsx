@@ -12,6 +12,7 @@ export default function Index() {
       document.body.classList.remove('theme-dark');
     }
   };
+
   return (
     <>
       <Head>

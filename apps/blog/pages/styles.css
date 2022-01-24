@@ -55,6 +55,7 @@ body {
 
 body * {
   font-size: inherit;
+  box-sizing: border-box;
 }
 
 #__next {
@@ -68,6 +69,7 @@ body * {
     '. main .'
     '. footer .';
   gap: 1rem;
+  padding: 0.5rem 0 0;
   align-content: stretch;
   justify-content: center;
   justify-items: stretch;
