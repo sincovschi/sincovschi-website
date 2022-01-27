@@ -1,0 +1,15 @@
+{
+  "root": "libs/pages",
+  "sourceRoot": "libs/pages/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/pages/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}

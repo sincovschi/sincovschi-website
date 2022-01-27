@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@sincovschi-website/article": ["libs/article/src/index.ts"],
-      "@sincovschi-website/layout": ["libs/layout/src/index.ts"]
+      "@sincovschi-website/layout": ["libs/layout/src/index.ts"],
+      "@sincovschi-website/pages": ["libs/pages/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

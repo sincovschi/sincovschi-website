@@ -4,6 +4,7 @@
     "api": "apps/api",
     "article": "libs/article",
     "blog": "apps/blog",
-    "layout": "libs/layout"
+    "layout": "libs/layout",
+    "pages": "libs/pages"
   }
 }

@@ -5,6 +5,6 @@ export type Article = {
     title?: string;
     shortDescription?: string;
     coverPath?: string;
-    date?: string;
+    publishedAt?: string;
   };
 };
