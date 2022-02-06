@@ -8,6 +8,7 @@ export default function Website({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Sincovschi's website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <Header />

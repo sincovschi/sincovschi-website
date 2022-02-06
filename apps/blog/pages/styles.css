@@ -175,7 +175,6 @@ h1,
 h2,
 h3 {
   border-bottom: 2px solid var(--bg-accent);
-  text-align: center;
 }
 
 blockquote {

@@ -8,7 +8,7 @@ export function Logo() {
   return (
     <div>
       <button onClick={goHome}>
-        <img src="/images/logo.svg" alt="Logo" />
+        <img src="/images/photo.jpg" alt="Logo" />
       </button>
       <style jsx>{`
         div {
@@ -17,13 +17,14 @@ export function Logo() {
           place-items: center;
         }
         button {
-          width: 1rem;
-          height: 1rem;
+          padding: 0;
+          width: 50px;
+          height: 50px;
+          box-sizing: border-box;
           border-radius: 50%;
+          overflow: hidden;
         }
         img {
-          width: 100%;
-          height: 100%;
           object-fit: cover;
         }
       `}</style>
