@@ -5,11 +5,11 @@ export function Search() {
   const [showSearch, setShowSearch] = useState(false);
 
   return (
-    <>
-      <button onClick={() => setShowSearch(!showSearch)}>
+    <div>
+      <button onClick={() => setShowSearch(true)}>
         <img src="/icons/search.svg" alt="Search" />
       </button>
-      {showSearch && <GoogleModal />}
+      {showSearch && <GoogleModal onClose={() => setShowSearch(false)} />}
       <style jsx>{`
         div {
           grid-area: search;
@@ -30,6 +30,6 @@ export function Search() {
           object-fit: contain;
         }
       `}</style>
-    </>
+    </div>
   );
 }
