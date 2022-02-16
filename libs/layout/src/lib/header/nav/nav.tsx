@@ -5,7 +5,7 @@ export function Nav() {
     <nav>
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/workshop">Workshop</NavLink>
-      <NavLink href="/contact">Contact</NavLink>
+      <NavLink href="/research">Research</NavLink>
       <style jsx>{`
         nav {
           font-family: 'Noto Sans', sans-serif;
@@ -14,6 +14,7 @@ export function Nav() {
           display: flex;
           align-items: center;
           justify-content: center;
+          flex-flow: row wrap;
         }
       `}</style>
     </nav>

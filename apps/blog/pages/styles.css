@@ -68,8 +68,6 @@ body * {
     '. header .'
     '. main .'
     '. footer .';
-  gap: 1rem;
-  padding: 0.5rem 0 0;
   align-content: stretch;
   justify-content: center;
   justify-items: stretch;
@@ -81,11 +79,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0.5rem 0;
 }
 
 main {
   grid-area: main;
   overflow-y: auto;
+  border-top: 2px solid var(--bg-accent);
+  border-bottom: 2px solid var(--bg-accent);
 }
 
 footer {
@@ -175,6 +176,7 @@ h1,
 h2,
 h3 {
   border-bottom: 2px solid var(--bg-accent);
+  text-align: center;
 }
 
 blockquote {

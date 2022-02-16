@@ -18,7 +18,7 @@ export function Header(props: HeaderProps) {
           grid-template-areas:
             'logo search'
             'nav nav';
-          gap: 0.5rem;
+          column-gap: 1rem;
           align-content: stretch;
           justify-content: center;
           justify-items: stretch;

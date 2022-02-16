@@ -12,6 +12,7 @@ export default function BlogPage({ articles }: { articles: Article[] }) {
           content="Eugene blog where you can find interesting articles for curious developers."
         />
       </Head>
+
       <ul>
         {articles.map((a, i) => (
           <li key={i}>
@@ -33,7 +34,7 @@ export default function BlogPage({ articles }: { articles: Article[] }) {
           }
           li {
             list-style-type: none;
-            margin: 0 0 0.3rem;
+            margin: 0.3rem 0;
             padding: 0;
           }
         `}</style>

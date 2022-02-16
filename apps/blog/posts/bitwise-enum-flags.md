@@ -1,7 +1,7 @@
 ---
 title: Bitwise enum flags to generate HTML from array
 shortDescription: Once upon a project, I had an interesting task. To generate animated points on a map.
-coverPath: /images/cover-bitwise-enum-flags.jpg
+coverPath: /images/blog/cover-bitwise-enum-flags.jpg
 publishedAt: 30 May 2021
 ---
 

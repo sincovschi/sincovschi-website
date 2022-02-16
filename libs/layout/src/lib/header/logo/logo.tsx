@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 
 export function Logo() {
@@ -8,7 +9,13 @@ export function Logo() {
   return (
     <div>
       <button onClick={goHome}>
-        <img src="/images/photo.jpg" alt="Logo" />
+        <Image
+          src={'/images/photo.jpg'}
+          alt="logo"
+          width={50}
+          height={50}
+          objectFit={'cover'}
+        />
       </button>
       <style jsx>{`
         div {
