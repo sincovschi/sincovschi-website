@@ -4,11 +4,40 @@ export interface FooterProps {}
 export function Footer(props: FooterProps) {
   return (
     <footer>
-      <h6>Copyright © Eugeniu Sincovschi 2021.</h6>
+      <h5>Copyright © Eugeniu Sincovschi 2021.</h5>
+      <h6>
+        Developed with <a href="https://nx.dev">nx.dev</a>,{' '}
+        <a href="https://nestjs.com" target="_blank">
+          nestjs.com
+        </a>
+        ,{' '}
+        <a href="https://nextjs.org" target="_blank">
+          nextjs.org
+        </a>
+        .
+      </h6>
+      <h6>
+        Hosted on{' '}
+        <a href="https://www.heroku.com/" target="_blank">
+          Heroku
+        </a>
+        . Source code{' '}
+        <a
+          href="https://github.com/sincovschi/sincovschi-website"
+          target="_blank"
+        >
+          github.com
+        </a>
+        .
+      </h6>
       <style jsx>{`
-        h6 {
-          margin: 0.3rem 0;
+        footer {
+          padding: 0.1rem 0;
           font-size: 0.6em;
+        }
+        h5,
+        h6 {
+          margin: 0.1rem 0;
         }
       `}</style>
     </footer>

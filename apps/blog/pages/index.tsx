@@ -16,8 +16,9 @@ export default function Index() {
   return (
     <>
       <Head>
-        <title>Wellcome to sincovchi website.</title>
+        <title>Sincovschi Eugene - Engineer, Designer, Researcher.</title>
       </Head>
+
       <h1>Welcome to Sincovschi&apos;s blog 👋</h1>
       <h4>Color theme:</h4>
       <button onClick={toggleTheme}>Theme toggler</button>
