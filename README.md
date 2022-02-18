@@ -1,29 +1,7 @@
 # Sincovschi Website
 
-This project was generated using [Nx](https://nx.dev).
+Readme files:
 
-## Heroku
+### [nx.dev](/docs/nx/README.md)
 
-### Command file
-
-```
-./Procfile
-```
-
-### Login:
-
-```
-npx heroku login
-```
-
-### Setup git:
-
-```
-npx heroku git:remote -a eugene-blog-md
-```
-
-### Heroku push:
-
-```
-git push heroku main
-```
+### [Heroku](/docs/heroku/README.md)
