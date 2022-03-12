@@ -35,7 +35,7 @@
 /* #endregion theme colors */
 
 :root {
-  --font-size: clamp(18px, 4vmin, 27px);
+  --font-size: clamp(16px, 4vmin, 24px);
   font-size: calc(5px + 1vw + 1vh + 3vmin);
   width: 100%;
   height: 100%;
@@ -44,6 +44,7 @@
 body {
   font-family: 'Noto Serif', serif;
   font-size: var(--font-size);
+  line-height: 1.65;
   color: var(--font-color);
   background-color: var(--bg-color);
   width: 100%;
@@ -103,7 +104,8 @@ code {
 
 pre {
   padding: 0.5em;
-  line-height: 1.25;
+  font-size: calc(var(--font-size) - 2px);
+  line-height: 1.7;
   overflow-x: scroll;
 }
 
