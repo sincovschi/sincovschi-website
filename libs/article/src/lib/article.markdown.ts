@@ -7,7 +7,10 @@ import { Article } from './article.model';
 
 export function getAllArticles(): Array<Article> {
   const articlesFileNames = fs.readdirSync(ARTICLES_DIR);
-  return articlesFileNames.map(getArticleContent);
+  const artictles = articlesFileNames.map(getArticleContent);
+  const getDate = (a: Article) => Date.parse(a.data.publishedAt || '');
+  artictles.sort((a, b) => getDate(b) - getDate(a));
+  return artictles;
 }
 
 export function getArticleContent(fileName: string): Article {
