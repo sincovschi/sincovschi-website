@@ -1,6 +1,6 @@
 ---
-title: React extract  context for not nested components via shared state pattern
-shortDescription: Once upon a project, I had an interesting task. To generate animated points on a map.
+title: React extract context for not nested components via shared state pattern
+shortDescription: Advanced details about React hooks and how to exploit their behavior for edge cases.
 coverPath: /images/blog/extract-react-context/cover.jpg
 publishedAt: 23 Apr 2021
 ---
@@ -66,7 +66,7 @@ ReactDOM.render(
   /**
    * Explanations on how to use `FlatProviders`
    * can be found in this article:
-   * https://dev.to/sincovschi/react-flat-multi-providers-1142
+   * https://sincovschi.com/react-flat-multi-providers
    */
   <FlatProviders providers={[L10nProvider, FormatDateProvider]}>
     <ExtractContextFromProvidersComponent />

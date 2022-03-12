@@ -1,6 +1,6 @@
 ---
 title: Bitwise enum flags to generate HTML from array
-shortDescription: Once upon a project, I had an interesting task. To generate animated points on a map.
+shortDescription: A case about usage of binary operations to generate HTML of each combination.
 coverPath: /images/blog/bitwise-enum-flags/cover.jpg
 publishedAt: 30 May 2021
 ---
