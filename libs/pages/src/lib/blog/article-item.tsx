@@ -19,7 +19,7 @@ export function ArticleListItem({
       <div className="cover">
         <div className="cover-content">
           <h5>{title}</h5>
-          <time>{publishedAt || '22.01.21'}</time>
+          <time>{publishedAt}</time>
           <img src={coverPath} alt={title + ' Cover'} />
         </div>
       </div>
