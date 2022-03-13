@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import { Article } from '@sincovschi-website/article';
+import { MouseEvent, MouseEventHandler } from 'react';
 
 export function ArticleListItem({
   article: {
@@ -10,12 +11,17 @@ export function ArticleListItem({
   article: Article;
 }) {
   const router = useRouter();
+  const href = '/blog/' + fileName.replace(/\.md$/i, '');
 
-  const goToArticle = () =>
-    router.push('/blog/' + fileName.replace(/\.md$/i, ''));
+  const onClick: MouseEventHandler<HTMLAnchorElement> = (
+    e: MouseEvent<HTMLAnchorElement>
+  ) => {
+    e.preventDefault();
+    router.push(href);
+  };
 
   return (
-    <article onClick={goToArticle}>
+    <a href={href} onClick={onClick}>
       <div className="cover">
         <div className="cover-content">
           <h5>{title}</h5>
@@ -25,10 +31,11 @@ export function ArticleListItem({
       </div>
       <h6>{shortDescription}</h6>
       <style jsx>{`
-        article {
+        a {
+          color: var(--font-color);
           cursor: pointer;
         }
-        article:hover h5 {
+        a:hover h5 {
           text-decoration: underline;
         }
         .cover {
@@ -72,6 +79,6 @@ export function ArticleListItem({
           opacity: 0.5;
         }
       `}</style>
-    </article>
+    </a>
   );
 }
