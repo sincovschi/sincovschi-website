@@ -14,7 +14,21 @@ export function Nav() {
           display: flex;
           align-items: center;
           justify-content: center;
-          flex-flow: row wrap;
+          flex-flow: column nowrap;
+          height: 0;
+          overflow: hidden;
+        }
+
+        :global(#hamburger:checked) ~ nav {
+          height: auto;
+          padding: 0.5rem 0;
+        }
+
+        @media screen and (min-width: 768px) {
+          nav {
+            height: auto;
+            flex-flow: row nowrap;
+          }
         }
       `}</style>
     </nav>
