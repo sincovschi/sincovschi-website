@@ -10,7 +10,7 @@ export function Logo() {
     <div>
       <button onClick={goHome}>
         <Image
-          src={'/images/photo.jpg'}
+          src={'/images/me.jpg'}
           alt="logo"
           width={50}
           height={50}
