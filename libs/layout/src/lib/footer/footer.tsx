@@ -7,24 +7,25 @@ export function Footer(props: FooterProps) {
       <h5>Copyright © Eugeniu Sincovschi 2021.</h5>
       <h6>
         Developed with <a href="https://nx.dev">nx.dev</a>,{' '}
-        <a href="https://nestjs.com" target="_blank">
+        <a href="https://nestjs.com" target="_blank" rel="noreferrer">
           nestjs.com
         </a>
         ,{' '}
-        <a href="https://nextjs.org" target="_blank">
+        <a href="https://nextjs.org" target="_blank" rel="noreferrer">
           nextjs.org
         </a>
         .
       </h6>
       <h6>
         Hosted on{' '}
-        <a href="https://www.heroku.com/" target="_blank">
+        <a href="https://www.heroku.com/" target="_blank" rel="noreferrer">
           Heroku
         </a>
         . Source code{' '}
         <a
           href="https://github.com/sincovschi/sincovschi-website"
           target="_blank"
+          rel="noreferrer"
         >
           github.com
         </a>

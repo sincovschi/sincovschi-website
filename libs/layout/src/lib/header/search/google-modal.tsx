@@ -12,7 +12,7 @@ export function GoogleModal({ onClose }: { onClose: () => void }) {
     scriptTag.async = true;
     scriptTag.src = 'https://cse.google.com/cse.js?cx=f97add8e8ffb1705d';
     divRef.current?.insertAdjacentElement('beforeend', scriptTag);
-  }, []);
+  }, [divRef]);
 
   return (
     <div ref={divRef}>

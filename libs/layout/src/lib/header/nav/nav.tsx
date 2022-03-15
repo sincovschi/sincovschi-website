@@ -1,4 +1,5 @@
 import { NavLink } from './nav-link';
+import { ThemeToggler } from './nav-theme-toggler';
 
 export function Nav() {
   return (
@@ -6,6 +7,7 @@ export function Nav() {
       <NavLink href="/blog">Blog</NavLink>
       <NavLink href="/workshop">Workshop</NavLink>
       <NavLink href="/research">Research</NavLink>
+      <ThemeToggler />
       <style jsx>{`
         nav {
           font-family: 'Noto Sans', sans-serif;

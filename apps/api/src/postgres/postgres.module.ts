@@ -9,7 +9,9 @@ export class PostgresModule {}
 function getTypeOrmModuleOptions(): TypeOrmModuleOptions {
   const isDev = process.env.NODE_ENV === 'development';
 
-  const options: TypeOrmModuleOptions & { ssl: any } = {
+  const options: TypeOrmModuleOptions & {
+    ssl: { rejectUnauthorized: boolean };
+  } = {
     type: isDev ? 'sqlite' : 'postgres',
     database: isDev ? './apps/api/src/postgres/db.sqlite' : '',
     url: isDev ? '' : process.env.DATABASE_URL,

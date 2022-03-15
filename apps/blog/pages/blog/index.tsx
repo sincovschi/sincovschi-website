@@ -6,7 +6,7 @@ export default function BlogPage({ articles }: { articles: Article[] }) {
   return (
     <>
       <Head>
-        <title>Eugene's Blog.</title>
+        <title>Eugene&apos;s Blog.</title>
         <meta
           name="description"
           content="Eugene blog where you can find interesting articles for curious developers."
