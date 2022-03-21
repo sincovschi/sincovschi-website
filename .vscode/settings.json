@@ -1,5 +1,11 @@
 {
-  "conventionalCommits.scopes": ["api", "blog", "workspace", "website"],
+  "conventionalCommits.scopes": [
+    "api",
+    "blog",
+    "workspace",
+    "website",
+    "research"
+  ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "cSpell.words": ["sincovschi"]
