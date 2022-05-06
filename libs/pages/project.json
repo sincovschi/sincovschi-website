@@ -1,5 +1,4 @@
 {
-  "root": "libs/pages",
   "sourceRoot": "libs/pages/src",
   "projectType": "library",
   "tags": [],

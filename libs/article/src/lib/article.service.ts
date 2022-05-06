@@ -7,9 +7,11 @@ export class ArticleService {
     return ArticleEntity.find();
   }
 
-  findOne(slug: string): Promise<ArticleEntity | undefined> {
+  findOne(slug: string): Promise<ArticleEntity | null> {
     return ArticleEntity.findOne({
-      slug,
+      where: {
+        slug,
+      },
     });
   }
 

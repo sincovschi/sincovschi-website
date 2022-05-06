@@ -1,27 +1,20 @@
 {
-  "root": "libs/layout",
   "sourceRoot": "libs/layout/src",
   "projectType": "library",
   "tags": [],
   "targets": {
     "lint": {
       "executor": "@nrwl/linter:eslint",
-      "outputs": [
-        "{options.outputFile}"
-      ],
+      "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": [
-          "libs/layout/**/*.{ts,tsx,js,jsx}"
-        ]
+        "lintFilePatterns": ["libs/layout/**/*.{ts,tsx,js,jsx}"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": [
-        "coverage/libs/layout"
-      ],
+      "outputs": ["coverage/libs/layout"],
       "options": {
-        "jestConfig": "libs/layout/jest.config.js",
+        "jestConfig": "libs/layout/jest.config.ts",
         "passWithNoTests": true
       }
     }

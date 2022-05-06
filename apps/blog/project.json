@@ -1,5 +1,4 @@
 {
-  "root": "apps/blog",
   "sourceRoot": "apps/blog",
   "projectType": "application",
   "targets": {
@@ -12,7 +11,8 @@
         "outputPath": "dist/apps/blog"
       },
       "configurations": {
-        "production": {}
+        "production": {},
+        "development": {}
       }
     },
     "serve": {
@@ -26,8 +26,13 @@
         "production": {
           "buildTarget": "blog:build:production",
           "dev": false
+        },
+        "development": {
+          "buildTarget": "blog:build:development",
+          "dev": true
         }
-      }
+      },
+      "defaultConfiguration": "development"
     },
     "export": {
       "executor": "@nrwl/next:export",
@@ -39,7 +44,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/blog"],
       "options": {
-        "jestConfig": "apps/blog/jest.config.js",
+        "jestConfig": "apps/blog/jest.config.ts",
         "passWithNoTests": true
       }
     },
