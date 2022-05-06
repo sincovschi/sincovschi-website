@@ -14,10 +14,11 @@ export default function Index() {
           3. add some images */}
 
       <section>
-        <h5>
-          Hi, I&apos;m Eugene Sincovschi, a well-rounded engineer, a technical
-          and cultural mentor and a passionate researcher.
-        </h5>
+        <h2>
+          Hi, I&apos;m Eugene Sincovschi, a well-rounded engineer, a mentor and
+          a passionate researcher.
+        </h2>
+        <hr />
         <div className="profile-image">
           <Image
             src="/images/me.jpg"
@@ -26,21 +27,32 @@ export default function Index() {
             alt="Eugene Sincovschi Picture"
           />
         </div>
+        <h1>
+          Promoting clean coding with psychological refactoring aims to improve
+          worldwide software quality so that every developer enjoys clean coding
+          and resonates with community.
+        </h1>
+        <hr />
         <p>
-          I love to share my knowledge that is acquired during over 10 years of
-          experience. My <Link href="/blog">Blog</Link> reflects the curiosities
-          and utilities that I found during my work or research.
+          I love to share the knowledge that has accumulated over 10 years of
+          experience.
         </p>
         <p>
-          One of the visions that drives me, is the increase of code quality
-          over the world, by helping developers to love coding and to discover
-          the inner &quot;boy scout&quot; attitude.
+          My <Link href="/blog">blog</Link> reflects the curiosities and
+          utilities that I found during my{' '}
+          <Link href="/research">research</Link> or working hours.
+        </p>
+        <p>
+          I plan to put together a sequence of{' '}
+          <Link href="/workshops">workshops</Link> that will improve
+          developers&apos; well-being and code quality, by training the ways of
+          psychological refactoring.
         </p>
       </section>
 
       <style jsx>{`
         .profile-image {
-          padding: 0.25rem;
+          margin: 0.4rem 0.25rem 0.15rem;
           text-align: center;
         }
 

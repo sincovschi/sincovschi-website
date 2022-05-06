@@ -30,7 +30,7 @@ export function GoogleModal({ onClose }: { onClose: () => void }) {
             padding: 1rem calc(50% - var(--body-width) / 2);
             display: flex;
             flex-flow: column;
-            z-index: 1;
+            z-index: 10;
           }
           span {
             align-self: flex-end;

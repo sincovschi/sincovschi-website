@@ -10,9 +10,7 @@ export default function ContactPage() {
       <div>
         <ul>
           <li>
-            <a href="mailto:eugen.sincovschi@outlook.com">
-              eugen.sincovschi@outlook.com
-            </a>
+            <a href="mailto:eugene@sincovschi.com">eugene@sincovschi.com</a>
           </li>
           <li>
             <a href="tel:37367212358">+(373) 672 12 358</a>

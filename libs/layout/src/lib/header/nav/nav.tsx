@@ -5,7 +5,7 @@ export function Nav() {
   return (
     <nav>
       <NavLink href="/blog">Blog</NavLink>
-      <NavLink href="/workshop">Workshop</NavLink>
+      <NavLink href="/workshops">Workshops</NavLink>
       <NavLink href="/research">Research</NavLink>
       <ThemeToggler />
       <style jsx>{`

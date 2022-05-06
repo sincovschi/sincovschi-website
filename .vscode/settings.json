@@ -4,7 +4,8 @@
     "blog",
     "workspace",
     "website",
-    "research"
+    "research",
+    "workshops"
   ],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
