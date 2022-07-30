@@ -20,11 +20,6 @@ export class AppController {
     return this.articleService.findAll();
   }
 
-  @Get('/articles/:slug')
-  getOneArticles(@Param() params) {
-    return this.articleService.findOne(params.slug);
-  }
-
   @Get('/articles/create-one')
   createOneArticle() {
     return this.articleService.createOne();
@@ -38,5 +33,10 @@ export class AppController {
   @Get('/articles/remove-all')
   removeAllArticle() {
     return this.articleService.removeAll();
+  }
+
+  @Get('/articles/:slug')
+  getOneArticles(@Param() params) {
+    return this.articleService.findOne(params.slug);
   }
 }
