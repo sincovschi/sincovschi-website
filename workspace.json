@@ -6,5 +6,6 @@
     "blog": "apps/blog",
     "layout": "libs/layout",
     "pages": "libs/pages"
-  }
+  },
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json"
 }
