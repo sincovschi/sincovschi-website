@@ -9,13 +9,7 @@ export function Logo() {
   return (
     <div>
       <button onClick={goHome}>
-        <Image
-          src={'/images/me.jpg'}
-          alt="logo"
-          width={50}
-          height={50}
-          objectFit={'cover'}
-        />
+        <Image src={'/images/me.jpg'} alt="logo" width={50} height={50} />
       </button>
       <style jsx>{`
         div {
