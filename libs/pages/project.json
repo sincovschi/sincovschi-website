@@ -11,5 +11,6 @@
         "lintFilePatterns": ["libs/pages/**/*.{ts,tsx,js,jsx}"]
       }
     }
-  }
+  },
+  "name": "pages"
 }

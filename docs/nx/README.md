@@ -8,9 +8,6 @@ npx nx migrate --run-migrations
 ```
 
 ```bash
-npx npm-check-updates --upgrade
-npm install
-// OR
 npx npm-check --update
 // OR
 npm install $(npm outdated | cut -d' ' -f 1 | sed '1d' | xargs -I '$' echo '$@latest' | xargs echo)
