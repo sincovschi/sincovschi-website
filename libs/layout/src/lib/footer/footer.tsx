@@ -18,8 +18,12 @@ export function Footer(props: FooterProps) {
       </h6>
       <h6>
         Hosted on{' '}
-        <a href="https://www.heroku.com/" target="_blank" rel="noreferrer">
-          Heroku
+        <a
+          href="https://vercel.com/sincovschi"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Vercel
         </a>
         . Source code{' '}
         <a

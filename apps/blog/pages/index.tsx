@@ -7,11 +7,20 @@ export default function Index() {
     <>
       <Head>
         <title>Eugene Sincovschi - Engineer, Mentor, Researcher.</title>
+        <meta
+          name="description"
+          content="Promoting clean coding with psychological refactoring aims to improve
+          worldwide software quality so that every developer enjoys clean coding
+          and resonates with community."
+        />
       </Head>
 
-      {/* 1. bigger picture
+      {/*
+        TODO:
+          1. bigger picture
           2. emphasize code quality and tdd
-          3. add some images */}
+          3. add some images
+      */}
 
       <section>
         <h2>
