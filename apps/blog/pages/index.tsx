@@ -37,25 +37,36 @@ export default function Index() {
           />
         </div>
         <h1>
-          Promoting clean coding with psychological refactoring aims to improve
-          worldwide software quality so that every developer enjoys clean coding
-          and resonates with community.
+          I envision a world where code quality is high and developers write
+          readable and elegant code with ease and joy, using psychological cues
+          to trigger small but effective refactoring.
         </h1>
         <hr />
         <p>
-          I love to share the knowledge that has accumulated over 10 years of
-          experience.
+          As a software developer with over a decade of experience, I have
+          learned the importance of clean coding for both the quality of the
+          software and the well-being of the developers. Clean coding is not
+          just a skill, but also a mindset that requires constant improvement
+          and adaptation.
         </p>
         <p>
-          My <Link href="/blog">blog</Link> reflects the curiosities and
-          utilities that I found during my{' '}
-          <Link href="/research">research</Link> or working hours.
+          Explore a variety of topics related to technology, innovation and
+          creativity in this <Link href="/blog">blog</Link>. Whether you are
+          looking for insights, tips, tutorials or reviews, you will find
+          something useful and interesting here.
         </p>
         <p>
-          I plan to put together a sequence of{' '}
-          <Link href="/workshops">workshops</Link> that will improve
-          developers&apos; well-being and code quality, by training the ways of
-          psychological refactoring.
+          This <Link href="/research">research</Link> section will teach you
+          some mind tricks to refactor your code automatically and boost your
+          software quality. You will learn how to use pareidolia, pomodoro,
+          millers law and more to improve your coding skills.
+        </p>
+        <p>
+          I also offer <Link href="/workshops">workshops</Link> that will teach
+          you how to use psychological refactoring in your daily work, with
+          practical exercises and feedback. By joining these workshops, you will
+          learn how to code better and happier, while resonating with a
+          community of like-minded developers.
         </p>
       </section>
 
